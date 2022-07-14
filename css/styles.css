@@ -74,7 +74,7 @@ li {
 }
 
 .container {
-    animation: loadup 1.3s;
+    animation: loadup 4s;
 }
 
 @keyframes loadup {
@@ -114,4 +114,8 @@ li {
 .headernav {
     grid-area: headernav;
     margin-top: 1.5rem;
+}
+
+.seccontainer {
+    animation: loadup 0.5s;
 }
