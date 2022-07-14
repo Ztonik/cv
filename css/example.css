@@ -1,0 +1,40 @@
+/* 
+
+hr {
+    border-color: #D3CEDF;
+    border-style: dotted none none none;
+    border-width: 10px;
+    width: 55%;
+}
+
+Class Selector Example 
+special is a specialized heading class that would be denoted by 
+(class="special")
+
+.special {
+    color: blue;
+}
+
+
+ID Selector Example
+An ID is different in that only allows one tag on a page to have the ID,
+Class can allow multiple
+
+coolid is a specialized heading ID that would be denoted by (id="coolid")
+
+#coolid {
+    color: red;
+}
+
+
+Pseudo Class Selector Example
+A pseudo class applies to a tag when it is in a certain state
+
+:hover is a specialized pseudoclass that only applies when the tag is
+being hovered over by the mouse 
+
+h1:hover {
+    color: orange;
+}
+
+*/

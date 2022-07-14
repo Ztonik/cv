@@ -1,0 +1,117 @@
+body {
+    background: linear-gradient(to bottom, #583D72, #FF8474);
+    margin: 1.5rem 0 0 1.5rem;
+}
+
+div {
+    background-color: white;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 35rem auto auto auto;
+    grid-template-areas: 
+    'banner'
+    'headernav'
+    'nav'
+    'main'
+}
+
+header {
+    grid-area: banner;
+    margin-left: 1.5rem;
+}
+
+nav {
+    grid-area: nav;
+    margin-left: 1.5rem;
+}
+
+main {
+    grid-area: main;
+    margin-left: 1.5rem;
+}
+
+hr {
+    border-style: none solid none none;
+    grid-area: hr;
+    margin-left: 1.5rem;
+}
+
+h1 {
+    font-family: 'Mina', sans-serif;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Cabin', sans-serif;
+}
+
+h4 {
+    font-family: 'Cabin', sans-serif;
+}
+
+p {
+    color: #4b4b4b;
+    font-family: 'Cabin', sans-serif;
+}
+
+ul {
+    font-family: 'Cabin', sans-serif;
+}
+
+li {
+    font-family: 'Cabin', sans-serif;
+    color: #4b4b4b;
+}
+
+@media only screen and (min-width: 56.25rem)    {
+    div {
+        grid-template-areas: 
+        'banner hidden headernav'
+        'nav hr main'
+        ;
+    }
+}
+
+.container {
+    animation: loadup 1.3s;
+}
+
+@keyframes loadup {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.contact {
+    text-decoration: underline;
+}
+
+.contact:hover {
+    text-decoration: none;
+}
+
+.dark {
+    color: black;
+}
+
+.heading {
+    color: #4b4b4b;
+}
+
+.hidden {
+    border-style: none;
+    width:0%;
+    grid-area: hidden;
+}
+
+.headernav {
+    grid-area: headernav;
+    margin-top: 1.5rem;
+}
